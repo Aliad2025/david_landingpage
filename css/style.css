@@ -14,15 +14,44 @@ body {
   width: 100%;
   max-width: 1200px;
   height: 100%;
-  background:  #C6FFDD; linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); 
+  background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
 .header {
-    height: 100px;
-    background-color: green;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid #f1f1f1;
+
+  /*crear un boton  */
+    & .boton {
+        background-color: #f1f1f1;    
+        border: 1px solid red;
+        border-radius: 5px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #8b8b8b;
+        font-size: 14px;
+
+    &.boton:hover {
+        background-color: #f1f1f1;    
+        border: 1px solid red;
+        border-radius: 5px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #f1f1f1;
+        transition: 8s;
+    }
+    }
+  background-color: #f1f1f1;    
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+    color: #8b8b8b;
+    font-size: 14px;
 
 }
 
