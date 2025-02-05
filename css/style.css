@@ -1,10 +1,33 @@
-html{
-    font-size: 16px;
-    font-family: sans-serif;
-    background-color: bisque;
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: bisque;
 }
-body{
+body {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#container {
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+
+.header {
+}
+.main {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+
+    & .info {
+        flex-grow: 1;
+    }
+    & .foto {
+        flex-grow: 1;
+    }
 }
+
