@@ -6,28 +6,39 @@ html {
 body {
   display: flex;
   justify-content: center;
+  height: 100vh;
   padding: 20px;
 }
+
 #container {
   width: 100%;
   max-width: 1200px;
-  background: white;
+  height: 100%;
+  background:  #C6FFDD; linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
-
 .header {
+    height: 100px;
+    background-color: green;
+
 }
+
 .main {
     display: flex;
 
     & .info {
-        flex-grow: 1;
+    flex-grow: 1;
+    height: 100%;
+    background-color: red;
     }
     & .foto {
-        flex-grow: 1;
+    flex-grow: 1;
+    height: 100%;
+    background-color: blue;
     }
+
 }
 
