@@ -3,3 +3,8 @@ html{
     font-family: sans-serif;
     background-color: bisque;
 }
+body{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
