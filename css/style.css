@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   font-family: sans-serif;
+  font-weight: lighter;
   background-color: bisque;
 }
 body {
@@ -8,6 +9,7 @@ body {
   justify-content: center;
   height: 100vh;
   padding: 20px;
+  color: #8b8b8b;
 }
 
 #container {
@@ -61,7 +63,25 @@ body {
     & .info {
     flex-grow: 1;
     height: 100%;
-    background-color: red;
+    background-color: cyan;
+    
+        & .saludo{
+        font-size: 24px;
+        color: #f7797d;
+        }
+        & .nombre{  
+        font-size: 48px;color: #1e1e1e;
+        margin-bottom: 10px;
+        }
+        & .profesion{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        }
+        & .descripcion{
+        font-size: 18px;
+        color: #1e1e1e;
+        }
     }
     & .foto {
     flex-grow: 1;
