@@ -10,6 +10,12 @@ body {
   height: 100vh;
   padding: 20px;
   color: #8b8b8b;
+
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    overflow: scroll;
+  }
 }
 
 #container {
@@ -59,11 +65,21 @@ body {
 
 .main {
     display: flex;
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      padding: 20px;
+    
+  }
 
     & .info {
     flex-grow: 1;
     height: 100%;
+    padding: 80px;
     background-color: cyan;
+    @media screen and (max-width: 768px) {
+        padding: 0px;
+      
+    }
     
         & .saludo{
         font-size: 24px;
@@ -91,3 +107,26 @@ body {
 
 }
 
+/* VERSION sMARTPHONE */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow: scroll;
+    padding: 10px;
+  }
+
+  #container {
+    padding: 10px;
+  }
+  .header {
+    justify-content: center;
+  }
+  .main {
+    flex-direction: column-reverse;
+
+    & .info {
+      margin-bottom: 20px;
+    }
+  }
+}
